@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de Tareas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list lines="none">
+    <ion-item *ngFor="let tarea of tareas" class="task-item" (click)="verDetalles(tarea)">
+      <ion-label>{{ tarea.titulo }}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="tarea.completada"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

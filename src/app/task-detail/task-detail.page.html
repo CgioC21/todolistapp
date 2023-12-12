@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Detalles de Tarea
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-label>Título: {{ tareaSeleccionada.titulo }}</ion-label>
+  <ion-label>Descripción: {{ tareaSeleccionada.descripcion }}</ion-label>
+  <ion-label>Tipo: {{ tareaSeleccionada.tipo }}</ion-label>
+  <ion-label>Estado: {{ tareaSeleccionada.completada ? 'Completada' : 'Pendiente' }}</ion-label>
+</ion-content>

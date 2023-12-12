@@ -1,3 +1,17 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-menu side="start" contentId="main">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="irA('home')">Inicio</ion-item>
+      <ion-item (click)="irA('add-task')">Agregar Tarea</ion-item>
+      <ion-item (click)="irA('task-list')">Lista de Tareas</ion-item>
+      <ion-item (click)="irA('task-detail')">Detalles de Tarea</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
